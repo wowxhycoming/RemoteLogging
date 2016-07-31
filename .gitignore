@@ -1,5 +1,6 @@
+!.gitignore
 .settings
 .project
 .classpath
+!target
 target/*
-!.keep
