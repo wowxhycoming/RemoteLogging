@@ -7,8 +7,34 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>RemoteLogging-Producer</artifactId>
+	<packaging>war</packaging>
+	<name>RemoteLogging-Producer</name>
+	<description>RemoteLogging-Producer</description>
+	
+	<properties>
+		<spring.version>4.3.2.RELEASE</spring.version>
+	</properties>
 
 	<dependencies>
+	
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 	
 		<dependency>
 			<groupId>log4j</groupId>
